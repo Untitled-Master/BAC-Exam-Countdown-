@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body {
+    background-color:#18181B;
+    font-family: 'Lato', sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Lato', sans-serif;
+  margin: 20px;
+
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.title{
+    text-align: center;
+    font-size:200px;
+    transition: ease-out;
+    transition-duration: 0.2s;
+}
+.title:hover{
+    color: #3BA563;
+    cursor: pointer;
+    transition: ease-out;
+    transition-duration: 0.2s;
+}
+p {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+  }
+#demo{
+    text-align: center;
+    transition: ease-out;
+    transition-duration: 0.2s;
+}
+#demo:hover{
+    color: #3BA563;
+    cursor: pointer;
+    transition: ease-out;
+    transition-duration: 0.2s;
+}
+.qot{
+    margin-top: 100px;
+    text-align: center;
+    transition: ease-out;
+    transition-duration: 0.2s;
+}
+.qot:hover{
+    color: #3BA563;
+    cursor: pointer;
+    transition: ease-out;
+    transition-duration: 0.2s;
+}
+.footer{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+    transition: ease-out;
+    transition-duration: 0.2s;
+}
+a{
+    font-family: 'Lato', sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Lato', sans-serif;
+    
+  }
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: #3BA563;
+    transition: ease-out;
+    transition-duration: 0.2s;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
+.p{
+    font-size: 30px;
+}
+.code-box {
+    background-color: #464646;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: auto;
+  }
+  
