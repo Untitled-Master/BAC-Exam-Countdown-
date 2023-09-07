@@ -23,6 +23,6 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "Time is up BOZO";
+    document.getElementById("demo").innerHTML = "Time is up";
   }
 }, 1000);
