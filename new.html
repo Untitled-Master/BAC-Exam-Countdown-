@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Font Awesome stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-lKuwC6U4tqU4UOWOsB8b9+9EhVvByEDCF1Z7Jy9gY4FfkcAA6GrfP8Xp8fO6I/pG" crossorigin="anonymous">
+    
+    <style>
+        /* Your existing styles here */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .title {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        #demo {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .qot {
+            font-size: 1rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            background-color: #555;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .footer h3 {
+            margin: 0;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jun 11, 2024 08:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "Time is up";
+            }
+        }, 1000);
+    </script>
+    <title>Bac is near</title>
+</head>
+<body>
+    <h1 class="title">BAC IS NEAR!</h1>
+    <p id="demo"></p>
+    <h2 class="qot">"Believe you can and you're halfway there."<br> -Theodore Roosevelt</h2>
+</body>
+</html>
